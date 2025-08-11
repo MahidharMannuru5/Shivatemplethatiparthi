@@ -12,35 +12,28 @@
       --primary:#a12b2b; --accent:#ff9933; --bg:#fdf6ec; --text:#2b1d1d; --muted:#6b4f4f;
       --border:#ead8c6; --chip:#fff1da; --card:#ffffff;
     }
-    html,body{background:var(--bg); color:var(--text); font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans";}
+    html,body{background:var(--bg); color:var(--text); font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans");}
     .navbar{background:var(--primary)!important; box-shadow:0 4px 16px rgba(161,43,43,.15)}
     .navbar .nav-link,.navbar-brand{color:#fff!important; font-weight:600}
     .navbar .nav-link:hover,.navbar .nav-link.active{color:var(--accent)!important}
-
-    .hero{position:relative; min-height:46vh; display:grid; place-items:center; text-align:center; overflow:hidden;
-      background:radial-gradient(800px 400px at 10% 10%, rgba(255,153,51,.18), transparent),
-                 radial-gradient(600px 300px at 90% 0%, rgba(161,43,43,.18), transparent),
-                 linear-gradient(180deg,#fff6e9 0%, #fdf6ec 70%);}
-    .chip{display:inline-flex; align-items:center; gap:.5rem; padding:.4rem .75rem; border-radius:999px; background:var(--chip); color:#7b3e00; font-weight:600; border:1px solid #ffd9a8}
     .section-title{font-family:Marcellus, serif; color:var(--primary); letter-spacing:.5px}
-
     .card{background:var(--card); border:1px solid var(--border); transition:transform .2s ease, box-shadow .2s ease}
     .card:hover{transform:translateY(-2px); box-shadow:0 12px 28px rgba(0,0,0,.10)}
     .muted{color:var(--muted)}
-
     footer{background:var(--primary); color:#fff}
     footer a{color:var(--accent)}
 
-    /* --- 16:9 media frames with full image visible (contain) --- */
+    /* 16:9 frames so full image is visible */
     .media-frame{aspect-ratio:16/9; background:#0f0f0f; display:flex; align-items:center; justify-content:center;}
-    .media-frame img{max-height:60vh; width:auto; height:auto; object-fit:contain}
-    @media (max-width: 576px){ .media-frame img{max-height:40vh} }
-
-    /* carousel */
+    .media-frame img{max-height:70vh; width:auto; height:auto; object-fit:contain}
+    @media (max-width: 576px){ .media-frame img{max-height:42vh} }
     .carousel .carousel-item{background:#0f0f0f}
     .carousel-caption{background:rgba(0,0,0,.45); padding:.5rem .75rem; border-radius:.5rem}
 
-    /* sponsor chips */
+    /* Committee alignment */
+    #committeeGrid{justify-content:center}
+    .committee-card{height:100%; max-width:340px; margin-inline:auto}
+    .committee-photo{width:86px;height:86px;object-fit:cover;border:3px solid #ffe0b7}
     .sponsor-chip{display:inline-flex; align-items:center; gap:.4rem; padding:.35rem .6rem; border-radius:999px; border:1px dashed #f1c08a; background:#fff7ea; color:#7b3e00; font-weight:600}
   </style>
 </head>
@@ -48,7 +41,7 @@
   <!-- NAV -->
   <nav class="navbar navbar-expand-lg sticky-top">
     <div class="container">
-      <a class="navbar-brand fw-bold" href="#home">Sri Shiva Temple, Thatiparthi</a>
+      <a class="navbar-brand fw-bold" href="#top">Sri Shiva Temple, Thatiparthi</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"><span class="navbar-toggler-icon"></span></button>
       <div class="collapse navbar-collapse" id="navMenu">
         <ul class="navbar-nav ms-auto gap-1">
@@ -56,7 +49,6 @@
           <li class="nav-item"><a class="nav-link" href="#timings">Timings</a></li>
           <li class="nav-item"><a class="nav-link" href="#events">Events</a></li>
           <li class="nav-item"><a class="nav-link" href="#committee">Committee</a></li>
-          <li class="nav-item"><a class="nav-link" href="#photos">Photos</a></li>
           <li class="nav-item"><a class="nav-link" href="#sponsors">Today’s Sponsors</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
           <li class="nav-item"><a class="nav-link" href="#donations">Donations</a></li>
@@ -65,78 +57,11 @@
     </div>
   </nav>
 
-  <!-- HERO -->
-  <header id="home" class="hero py-5">
-    <div class="container text-center">
-      <div class="chip mb-3"><i class="bi bi-flower1"></i> Om Namah Shivaya</div>
-      <h1 class="display-6 fw-bold section-title">Sri Shiva Temple, <span style="color:var(--accent)">Thatiparthi</span></h1>
-      <p class="lead muted mb-0">Timings, events, photos, committee details & transparent donations.</p>
-      <!-- no “View Photos” button per request -->
-    </div>
-  </header>
-
-  <!-- ABOUT -->
-  <section id="about" class="py-5">
+  <!-- PHOTOS FIRST -->
+  <section id="top" class="pt-3 pb-4">
     <div class="container">
-      <div class="row g-4">
-        <div class="col-lg-8">
-          <div class="card p-4">
-            <h2 class="section-title mb-3">About the Temple</h2>
-            <p class="muted">Sri Shiva Temple, Thatiparthi is a serene abode dedicated to Lord Shiva. Daily poojas and special celebrations like <em>Maha Shivratri</em> and <em>Pradosham</em> are conducted with devotion. This site shares timings, events, photos, committee info and a transparent donations board.</p>
-            <ul class="mb-0 muted">
-              <li><strong>Daily Aarti:</strong> 6:00 AM & 7:00 PM</li>
-              <li><strong>Open Hours:</strong> 5:30 AM – 11:30 AM & 5:30 PM – 9:00 PM</li>
-              <li><strong>Special Days:</strong> Mondays, Pradosham, Shravan</li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="card p-4 text-center h-100">
-            <div class="rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width:80px;height:80px;background:linear-gradient(135deg,var(--primary),var(--accent)); color:#fff"><i class="bi bi-stars fs-3"></i></div>
-            <div class="fw-semibold">Om Namah Shivaya</div>
-            <div class="muted small">Peace • Devotion • Seva</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- TIMINGS -->
-  <section id="timings" class="py-5">
-    <div class="container">
-      <div class="row g-4">
-        <div class="col-md-6"><div class="card p-4 h-100"><h2 class="section-title h4">Darshan Hours</h2><ul class="mb-0 muted"><li>Morning: 5:30 AM – 11:30 AM</li><li>Evening: 5:30 PM – 9:00 PM</li><li>Festivals: Extended hours</li></ul></div></div>
-        <div class="col-md-6"><div class="card p-4 h-100"><h2 class="section-title h4">Pooja Schedule</h2><ul class="mb-0 muted"><li>Suprabhata Seva – 5:45 AM</li><li>Alankaram & Archana – 10:00 AM</li><li>Sandhya Aarti – 7:00 PM</li></ul></div></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- EVENTS -->
-  <section id="events" class="py-5">
-    <div class="container">
-      <div class="d-flex justify-content-between align-items-center mb-3">
-        <h2 class="section-title mb-0">Upcoming Events</h2>
-        <span class="badge" style="background:var(--chip); color:#7b3e00; border:1px solid #ffd9a8">Auto-filled</span>
-      </div>
-      <ul id="eventList" class="list-group list-group-flush"></ul>
-    </div>
-  </section>
-
-  <!-- COMMITTEE -->
-  <section id="committee" class="py-5">
-    <div class="container">
-      <h2 class="section-title mb-3">Temple Committee</h2>
-      <div id="committeeGrid" class="row g-3"></div>
-    </div>
-  </section>
-
-  <!-- PHOTOS: 16:9 frames with object-fit:contain -->
-  <section id="photos" class="py-5">
-    <div class="container">
-      <h2 class="section-title mb-3">Darshan & Temple Photos</h2>
       <div id="photosCarousel" class="carousel slide rounded-4 overflow-hidden shadow" data-bs-ride="carousel">
         <div class="carousel-inner">
-          <!-- each slide is a 16:9 frame so the whole image is visible -->
           <div class="carousel-item active">
             <div class="media-frame">
               <img loading="lazy" src="https://raw.githubusercontent.com/MahidharMannuru5/Shivatemplethatiparthi/main/Images/IMG-20250213-WA0014.jpg" alt="Alankaram & Deepam">
@@ -145,7 +70,7 @@
           </div>
           <div class="carousel-item">
             <div class="media-frame">
-              <img loading="lazy" src="https://raw.githubusercontent.com/MahidharMannuru5/Shivatemplethatiparthipathi/main/Images/IMG-20250213-WA0017.jpg" alt="Lingam Darshan" onerror="this.src='https://raw.githubusercontent.com/MahidharMannuru5/Shivatemplethatiparthi/main/Images/IMG-20250213-WA0017.jpg'">
+              <img loading="lazy" src="https://raw.githubusercontent.com/MahidharMannuru5/Shivatemplethatiparthi/main/Images/IMG-20250213-WA0017.jpg" alt="Lingam Darshan">
             </div>
             <div class="carousel-caption d-none d-md-block"><h5>Lingam Darshan</h5></div>
           </div>
@@ -198,6 +123,50 @@
     </div>
   </section>
 
+  <!-- ABOUT (no right-side “Om Namah Shivaya” card) -->
+  <section id="about" class="pb-5">
+    <div class="container">
+      <div class="card p-4">
+        <h2 class="section-title mb-3">About the Temple</h2>
+        <p class="muted mb-2">Sri Shiva Temple, Thatiparthi is a serene abode dedicated to Lord Shiva. Daily poojas and special celebrations like <em>Maha Shivratri</em> and <em>Pradosham</em> are conducted with devotion. This site shares timings, events, photos, committee info and a transparent donations board.</p>
+        <ul class="mb-0 muted">
+          <li><strong>Daily Aarti:</strong> 6:00 AM & 7:00 PM</li>
+          <li><strong>Open Hours:</strong> 5:30 AM – 11:30 AM & 5:30 PM – 9:00 PM</li>
+          <li><strong>Special Days:</strong> Mondays, Pradosham, Shravan</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- TIMINGS -->
+  <section id="timings" class="py-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-6"><div class="card p-4 h-100"><h2 class="section-title h4">Darshan Hours</h2><ul class="mb-0 muted"><li>Morning: 5:30 AM – 11:30 AM</li><li>Evening: 5:30 PM – 9:00 PM</li><li>Festivals: Extended hours</li></ul></div></div>
+        <div class="col-md-6"><div class="card p-4 h-100"><h2 class="section-title h4">Pooja Schedule</h2><ul class="mb-0 muted"><li>Suprabhata Seva – 5:45 AM</li><li>Alankaram & Archana – 10:00 AM</li><li>Sandhya Aarti – 7:00 PM</li></ul></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EVENTS -->
+  <section id="events" class="py-5">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <h2 class="section-title mb-0">Upcoming Events</h2>
+        <span class="badge" style="background:var(--chip); color:#7b3e00; border:1px solid #ffd9a8">Auto-filled</span>
+      </div>
+      <ul id="eventList" class="list-group list-group-flush"></ul>
+    </div>
+  </section>
+
+  <!-- COMMITTEE (centered, equal widths) -->
+  <section id="committee" class="py-5">
+    <div class="container">
+      <h2 class="section-title mb-3">Temple Committee</h2>
+      <div id="committeeGrid" class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4"></div>
+    </div>
+  </section>
+
   <!-- TODAY'S SPONSORS -->
   <section id="sponsors" class="py-5">
     <div class="container">
@@ -205,16 +174,13 @@
         <h2 class="section-title mb-0">Today’s Sponsors</h2>
         <span class="sponsor-chip"><i class="bi bi-people"></i> Community Support</span>
       </div>
-
       <div class="row g-3">
-        <!-- Cash sponsors -->
         <div class="col-md-6">
           <div class="card p-3 h-100">
             <h5 class="mb-2"><i class="bi bi-cash-coin me-2"></i>Cash Sponsors</h5>
             <ul id="cashSponsors" class="list-group list-group-flush small"></ul>
           </div>
         </div>
-        <!-- In-kind sponsors -->
         <div class="col-md-6">
           <div class="card p-3 h-100">
             <h5 class="mb-2"><i class="bi bi-box-seam me-2"></i>In-Kind Sponsors</h5>
@@ -222,14 +188,13 @@
           </div>
         </div>
       </div>
-
       <div class="alert alert-warning mt-3 p-2 small mb-0">
         Want to sponsor annadanam, flowers, oil, or prasadam? Contact temple office — we’ll add your name here.
       </div>
     </div>
   </section>
 
-  <!-- CONTACT -->
+  <!-- CONTACT (map updated for Thatiparthi) -->
   <section id="contact" class="py-5">
     <div class="container">
       <h2 class="section-title mb-3">Contact & Location</h2>
@@ -238,12 +203,14 @@
           <div class="card p-4 h-100">
             <div class="d-flex align-items-center mb-2"><i class="bi bi-telephone me-2"></i> <span>+91 98765 43210</span></div>
             <div class="d-flex align-items-center mb-2"><i class="bi bi-envelope me-2"></i> <span>shivatemple@example.com</span></div>
-            <div class="d-flex align-items-start"><i class="bi bi-geo-alt me-2"></i> <span>Sri Shiva Temple, Thatiparthi, Andhra Pradesh – 000000</span></div>
+            <div class="d-flex align-items-start"><i class="bi bi-geo-alt me-2"></i> <span>Sri Shiva Temple, Thatiparthi, Andhra Pradesh</span></div>
           </div>
         </div>
         <div class="col-md-7">
           <div class="ratio ratio-16x9 rounded overflow-hidden" style="box-shadow:0 10px 30px rgba(0,0,0,.12)">
-            <iframe src="https://www.google.com/maps?q=Thatiparthi&output=embed" style="border:0" allowfullscreen loading="lazy"></iframe>
+            <iframe
+              src="https://www.google.com/maps?q=Thatiparthi%2C%20Andhra%20Pradesh&z=14&output=embed"
+              referrerpolicy="no-referrer-when-downgrade" style="border:0" allowfullscreen loading="lazy"></iframe>
           </div>
         </div>
       </div>
@@ -366,10 +333,10 @@
       grid.innerHTML = '';
       committee.forEach(m=>{
         const col = document.createElement('div');
-        col.className = 'col-12 col-sm-6 col-lg-4 col-xl-3';
+        col.className = 'col';
         col.innerHTML = `
-          <div class="card p-3 text-center h-100">
-            <img src="${m.photo}" alt="${m.name}" class="rounded-circle mb-3" style="width:86px;height:86px;object-fit:cover;border:3px solid #ffe0b7">
+          <div class="card committee-card p-3 text-center">
+            <img src="${m.photo}" alt="${m.name}" class="rounded-circle mb-3 committee-photo">
             <div class="fw-semibold">${m.name}</div>
             <div class="muted small mb-1">${m.role}</div>
             <div class="small"><i class="bi bi-telephone me-1"></i>${m.phone}</div>
@@ -383,14 +350,12 @@
       const kindUl = document.getElementById('kindSponsors');
       cashUl.innerHTML = '';
       kindUl.innerHTML = '';
-
       sponsorsToday.cash.forEach((s,i)=>{
         const li = document.createElement('li');
         li.className = 'list-group-item d-flex justify-content-between align-items-center';
         li.innerHTML = `<span>${i+1}. <strong>${s.name}</strong> — <span class="text-success">${fmtINR(s.amount)}</span> <span class="muted">(${s.note||''})</span></span>`;
         cashUl.appendChild(li);
       });
-
       sponsorsToday.kind.forEach((s,i)=>{
         const li = document.createElement('li');
         li.className = 'list-group-item d-flex justify-content-between align-items-center';
@@ -419,7 +384,7 @@
     }
 
     // init
-    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById('year')?.textContent = new Date().getFullYear();
     renderEvents(); renderCommittee(); renderSponsors(); renderDonations();
   </script>
 </body>
