@@ -4,42 +4,35 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Sri Shiva Temple, Thatiparthi • Official Site</title>
-<meta name="description" content="Sri Shiva Temple, Thatiparthi — timings, events, photos, committee, sponsors, transparent donations." />
+<meta name="description" content="Sri Shiva Temple, Thatiparthi — timings, events, photos, committee, sponsors, and transparent donations." />
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
 <style>
-  :root{
-    --primary:#a12b2b; --accent:#ff9933; --bg:#fdf6ec; --text:#2b1d1d; --muted:#6b4f4f;
-    --border:#ead8c6; --chip:#fff1da; --card:#ffffff;
-  }
-  html,body{background:var(--bg); color:var(--text); font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans";}
+  :root{ --primary:#a12b2b; --accent:#ff9933; --bg:#fdf6ec; --text:#2b1d1d; --muted:#6b4f4f; --border:#ead8c6; --card:#fff; }
+  html,body{background:var(--bg); color:var(--text); font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;}
   .navbar{background:var(--primary)!important; box-shadow:0 4px 16px rgba(161,43,43,.15)}
   .navbar .nav-link,.navbar-brand{color:#fff!important; font-weight:600}
   .navbar .nav-link:hover,.navbar .nav-link.active{color:var(--accent)!important}
-  .section-title{font-family:Marcellus, serif; color:var(--primary); letter-spacing:.5px}
-  .card{background:var(--card); border:1px solid var(--border); transition:transform .2s ease, box-shadow .2s ease}
-  .card:hover{transform:translateY(-2px); box-shadow:0 12px 28px rgba(0,0,0,.10)}
+  .section-title{font-family:Marcellus,serif; color:var(--primary); letter-spacing:.4px}
+  .card{background:var(--card); border:1px solid var(--border); box-shadow:0 4px 14px rgba(0,0,0,.05)}
   .muted{color:var(--muted)}
   footer{background:var(--primary); color:#fff}
   footer a{color:var(--accent)}
-
   /* 16:9 frames so full image is visible */
   .media-frame{aspect-ratio:16/9; background:#0f0f0f; display:flex; align-items:center; justify-content:center;}
   .media-frame img{max-height:70vh; width:auto; height:auto; object-fit:contain}
-  @media (max-width: 576px){ .media-frame img{max-height:42vh} }
+  @media (max-width:576px){ .media-frame img{max-height:42vh} }
   .carousel .carousel-item{background:#0f0f0f}
   .carousel-caption{background:rgba(0,0,0,.45); padding:.5rem .75rem; border-radius:.5rem}
-
-  /* Committee alignment */
+  /* Committee */
   #committeeGrid{justify-content:center}
-  .committee-card{height:100%; max-width:340px; margin-inline:auto}
-  .committee-photo{width:86px;height:86px;object-fit:cover;border:3px solid #ffe0b7}
-
+  .committee-card{max-width:340px; margin-inline:auto}
+  .committee-photo{width:86px; height:86px; object-fit:cover; border:3px solid #ffe0b7}
+  /* Sponsor chip */
   .sponsor-chip{display:inline-flex; align-items:center; gap:.4rem; padding:.35rem .6rem; border-radius:999px; border:1px dashed #f1c08a; background:#fff7ea; color:#7b3e00; font-weight:600}
 </style>
 </head>
 <body>
-<!-- NAV -->
 <nav class="navbar navbar-expand-lg sticky-top">
   <div class="container">
     <a class="navbar-brand fw-bold" href="#top">Sri Shiva Temple, Thatiparthi</a>
@@ -58,44 +51,44 @@
   </div>
 </nav>
 
-<!-- PHOTOS FIRST (construction images removed) -->
+<!-- PHOTOS (top, no construction pics) -->
 <section id="top" class="pt-3 pb-4">
   <div class="container">
     <div id="photosCarousel" class="carousel slide rounded-4 overflow-hidden shadow" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
           <div class="media-frame">
-            <img loading="lazy" src="https://raw.githubusercontent.com/MahidharMannuru5/Shivatemplethatiparthi/main/Images/IMG-20250213-WA0014.jpg" alt="Alankaram & Deepam">
+            <img src="https://raw.githubusercontent.com/MahidharMannuru5/Shivatemplethatiparthi/main/Images/IMG-20250213-WA0014.jpg" alt="Alankaram & Deepam" loading="lazy">
           </div>
           <div class="carousel-caption d-none d-md-block"><h5>Alankaram & Deepam</h5></div>
         </div>
         <div class="carousel-item">
           <div class="media-frame">
-            <img loading="lazy" src="https://raw.githubusercontent.com/MahidharMannuru5/Shivatemplethatiparthi/main/Images/IMG-20250213-WA0017.jpg" alt="Lingam Darshan">
+            <img src="https://raw.githubusercontent.com/MahidharMannuru5/Shivatemplethatiparthi/main/Images/IMG-20250213-WA0017.jpg" alt="Lingam Darshan" loading="lazy">
           </div>
           <div class="carousel-caption d-none d-md-block"><h5>Lingam Darshan</h5></div>
         </div>
         <div class="carousel-item">
           <div class="media-frame">
-            <img loading="lazy" src="https://raw.githubusercontent.com/MahidharMannuru5/Shivatemplethatiparthi/main/Images/IMG-20250710-WA0026.jpg" alt="Bhajan & Pooja">
+            <img src="https://raw.githubusercontent.com/MahidharMannuru5/Shivatemplethatiparthi/main/Images/IMG-20250710-WA0026.jpg" alt="Bhajan & Pooja" loading="lazy">
           </div>
           <div class="carousel-caption d-none d-md-block"><h5>Bhajan & Pooja</h5></div>
         </div>
         <div class="carousel-item">
           <div class="media-frame">
-            <img loading="lazy" src="https://raw.githubusercontent.com/MahidharMannuru5/Shivatemplethatiparthi/main/Images/IMG-20250710-WA0034.jpg" alt="Community Prayer">
+            <img src="https://raw.githubusercontent.com/MahidharMannuru5/Shivatemplethatiparthi/main/Images/IMG-20250710-WA0034.jpg" alt="Community Prayer" loading="lazy">
           </div>
           <div class="carousel-caption d-none d-md-block"><h5>Community Prayer</h5></div>
         </div>
         <div class="carousel-item">
           <div class="media-frame">
-            <img loading="lazy" src="https://raw.githubusercontent.com/MahidharMannuru5/Shivatemplethatiparthi/main/Images/IMG-20250710-WA0038.jpg" alt="Temple Gathering">
+            <img src="https://raw.githubusercontent.com/MahidharMannuru5/Shivatemplethatiparthi/main/Images/IMG-20250710-WA0038.jpg" alt="Temple Gathering" loading="lazy">
           </div>
           <div class="carousel-caption d-none d-md-block"><h5>Temple Gathering</h5></div>
         </div>
         <div class="carousel-item">
           <div class="media-frame">
-            <img loading="lazy" src="https://raw.githubusercontent.com/MahidharMannuru5/Shivatemplethatiparthi/main/Images/IMG-20250811-WA0002.jpg" alt="Temple Activities">
+            <img src="https://raw.githubusercontent.com/MahidharMannuru5/Shivatemplethatiparthi/main/Images/IMG-20250811-WA0002.jpg" alt="Temple Activities" loading="lazy">
           </div>
           <div class="carousel-caption d-none d-md-block"><h5>Temple Activities</h5></div>
         </div>
@@ -111,7 +104,7 @@
   <div class="container">
     <div class="card p-4">
       <h2 class="section-title mb-3">About the Temple</h2>
-      <p class="muted mb-2">Sri Shiva Temple, Thatiparthi is a serene abode dedicated to Lord Shiva. Daily poojas and special celebrations like <em>Maha Shivratri</em> and <em>Pradosham</em> are conducted with devotion. This site shares timings, events, photos, committee info and a transparent donations board.</p>
+      <p class="muted mb-2">Sri Shiva Temple, Thatiparthi is a serene abode dedicated to Lord Shiva. Daily poojas and special celebrations like <em>Maha Shivratri</em> and <em>Pradosham</em> are conducted with devotion. This site shares timings, events, photos, committee information and a transparent donations board.</p>
       <ul class="mb-0 muted">
         <li><strong>Daily Aarti:</strong> 6:00 AM & 7:00 PM</li>
         <li><strong>Open Hours:</strong> 5:30 AM – 11:30 AM & 5:30 PM – 9:00 PM</li>
@@ -125,32 +118,125 @@
 <section id="timings" class="py-5">
   <div class="container">
     <div class="row g-4">
-      <div class="col-md-6"><div class="card p-4 h-100"><h2 class="section-title h4">Darshan Hours</h2><ul class="mb-0 muted"><li>Morning: 5:30 AM – 11:30 AM</li><li>Evening: 5:30 PM – 9:00 PM</li><li>Festivals: Extended hours</li></ul></div></div>
-      <div class="col-md-6"><div class="card p-4 h-100"><h2 class="section-title h4">Pooja Schedule</h2><ul class="mb-0 muted"><li>Suprabhata Seva – 5:45 AM</li><li>Alankaram & Archana – 10:00 AM</li><li>Sandhya Aarti – 7:00 PM</li></ul></div></div>
+      <div class="col-md-6">
+        <div class="card p-4 h-100">
+          <h2 class="section-title h4">Darshan Hours</h2>
+          <ul class="mb-0 muted">
+            <li>Morning: 5:30 AM – 11:30 AM</li>
+            <li>Evening: 5:30 PM – 9:00 PM</li>
+            <li>Festivals: Extended hours</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card p-4 h-100">
+          <h2 class="section-title h4">Pooja Schedule</h2>
+          <ul class="mb-0 muted">
+            <li>Suprabhata Seva – 5:45 AM</li>
+            <li>Alankaram & Archana – 10:00 AM</li>
+            <li>Sandhya Aarti – 7:00 PM</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- EVENTS (DUMMY DATA) -->
+<!-- EVENTS (hard-coded list) -->
 <section id="events" class="py-5">
   <div class="container">
     <div class="d-flex justify-content-between align-items-center mb-3">
       <h2 class="section-title mb-0">Upcoming Events</h2>
-      <span class="badge" style="background:var(--chip); color:#7b3e00; border:1px solid #ffd9a8">Auto-filled</span>
+      <span class="badge" style="background:#fff1da;color:#7b3e00;border:1px solid #ffd9a8">Auto-filled</span>
     </div>
-    <ul id="eventList" class="list-group list-group-flush"></ul>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item d-flex justify-content-between align-items-start">
+        <div class="me-auto"><div class="fw-semibold">Pradosham Special Abhishekam</div><div class="muted small">Evening aarti, bhajans, prasadam.</div></div>
+        <span class="badge rounded-pill" style="background:#fff1da;color:#7b3e00;border:1px solid #ffd9a8">Sun, 17 Aug 2025</span>
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-items-start">
+        <div class="me-auto"><div class="fw-semibold">Shravan Somvar Bhajan</div><div class="muted small">Devotional songs and collective archana.</div></div>
+        <span class="badge rounded-pill" style="background:#fff1da;color:#7b3e00;border:1px solid #ffd9a8">Mon, 18 Aug 2025</span>
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-items-start">
+        <div class="me-auto"><div class="fw-semibold">Rudrabhishekam</div><div class="muted small">Rudra chanting and special puja.</div></div>
+        <span class="badge rounded-pill" style="background:#fff1da;color:#7b3e00;border:1px solid #ffd9a8">Mon, 25 Aug 2025</span>
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-items-start">
+        <div class="me-auto"><div class="fw-semibold">Monthly Annadanam</div><div class="muted small">Community lunch service.</div></div>
+        <span class="badge rounded-pill" style="background:#fff1da;color:#7b3e00;border:1px solid #ffd9a8">Thu, 28 Aug 2025</span>
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-items-start">
+        <div class="me-auto"><div class="fw-semibold">Ganesh Chaturthi Seva Drive</div><div class="muted small">Volunteer sign-up and preparation.</div></div>
+        <span class="badge rounded-pill" style="background:#fff1da;color:#7b3e00;border:1px solid #ffd9a8">Tue, 2 Sep 2025</span>
+      </li>
+    </ul>
   </div>
 </section>
 
-<!-- COMMITTEE (CENTERED, FULL DUMMY LIST) -->
+<!-- COMMITTEE (hard-coded cards) -->
 <section id="committee" class="py-5">
   <div class="container">
     <h2 class="section-title mb-3">Temple Committee</h2>
-    <div id="committeeGrid" class="row g-4 justify-content-center"></div>
+    <div id="committeeGrid" class="row g-4 justify-content-center">
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="card committee-card p-3 text-center">
+          <img src="https://raw.githubusercontent.com/MahidharMannuru5/Shivatemplethatiparthi/main/Images/IMG-20250213-WA0017.jpg" class="rounded-circle mb-3 committee-photo" alt="Founding Member">
+          <div class="fw-semibold">Founding Member</div>
+          <div class="muted small mb-1">Founder & Trustee</div>
+          <div class="small"><i class="bi bi-telephone me-1"></i>+91 91234 56789</div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="card committee-card p-3 text-center">
+          <img src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?q=80&w=400&auto=format&fit=crop" class="rounded-circle mb-3 committee-photo" alt="Mahesh Babu">
+          <div class="fw-semibold">Mahesh Babu</div>
+          <div class="muted small mb-1">Chairperson</div>
+          <div class="small"><i class="bi bi-telephone me-1"></i>+91 98123 12345</div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="card committee-card p-3 text-center">
+          <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=400&auto=format&fit=crop" class="rounded-circle mb-3 committee-photo" alt="Lakshmi Narayan">
+          <div class="fw-semibold">Lakshmi Narayan</div>
+          <div class="muted small mb-1">Treasurer</div>
+          <div class="small"><i class="bi bi-telephone me-1"></i>+91 99123 23456</div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="card committee-card p-3 text-center">
+          <img src="https://images.unsplash.com/photo-1541534401786-2077eed87a72?q=80&w=400&auto=format&fit=crop" class="rounded-circle mb-3 committee-photo" alt="K. Sangeetha">
+          <div class="fw-semibold">K. Sangeetha</div>
+          <div class="muted small mb-1">Events Coordinator</div>
+          <div class="small"><i class="bi bi-telephone me-1"></i>+91 97123 34567</div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="card committee-card p-3 text-center">
+          <img src="https://images.unsplash.com/photo-1552374196-c4e7ffc6e126?q=80&w=400&auto=format&fit=crop" class="rounded-circle mb-3 committee-photo" alt="R. Ganesan">
+          <div class="fw-semibold">R. Ganesan</div>
+          <div class="muted small mb-1">Temple Manager</div>
+          <div class="small"><i class="bi bi-telephone me-1"></i>+91 96123 45678</div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="card committee-card p-3 text-center">
+          <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=400&auto=format&fit=crop" class="rounded-circle mb-3 committee-photo" alt="Priya Dharshini">
+          <div class="fw-semibold">Priya Dharshini</div>
+          <div class="muted small mb-1">Communications</div>
+          <div class="small"><i class="bi bi-telephone me-1"></i>+91 95123 56789</div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
-<!-- TODAY'S SPONSORS (DUMMY DATA) -->
+<!-- TODAY’S SPONSORS (hard-coded lists) -->
 <section id="sponsors" class="py-5">
   <div class="container">
     <div class="d-flex justify-content-between align-items-center mb-3">
@@ -161,13 +247,22 @@
       <div class="col-md-6">
         <div class="card p-3 h-100">
           <h5 class="mb-2"><i class="bi bi-cash-coin me-2"></i>Cash Sponsors</h5>
-          <ul id="cashSponsors" class="list-group list-group-flush small"></ul>
+          <ul class="list-group list-group-flush small">
+            <li class="list-group-item d-flex justify-content-between align-items-center"><span>1. <strong>Karthik Family</strong> — <span class="text-success">₹2,000</span> <span class="muted">(Alankaram)</span></span></li>
+            <li class="list-group-item d-flex justify-content-between align-items-center"><span>2. <strong>Vijaya Lakshmi</strong> — <span class="text-success">₹501</span> <span class="muted">(Deepam)</span></span></li>
+            <li class="list-group-item d-flex justify-content-between align-items-center"><span>3. <strong>Suresh & Co.</strong> — <span class="text-success">₹1,501</span> <span class="muted">(Prasadam)</span></span></li>
+          </ul>
         </div>
       </div>
       <div class="col-md-6">
         <div class="card p-3 h-100">
           <h5 class="mb-2"><i class="bi bi-box-seam me-2"></i>In-Kind Sponsors</h5>
-          <ul id="kindSponsors" class="list-group list-group-flush small"></ul>
+          <ul class="list-group list-group-flush small">
+            <li class="list-group-item d-flex justify-content-between align-items-center"><span>1. <strong>Raghav</strong> — <em>Rice 25kg</em> <span class="muted">(Annadanam)</span></span></li>
+            <li class="list-group-item d-flex justify-content-between align-items-center"><span>2. <strong>Shreya</strong> — <em>Flowers & garlands</em> <span class="muted">(Evening Aarti)</span></span></li>
+            <li class="list-group-item d-flex justify-content-between align-items-center"><span>3. <strong>Local Dairy</strong> — <em>Milk for abhishekam</em> <span class="muted">(Morning Pooja)</span></span></li>
+            <li class="list-group-item d-flex justify-content-between align-items-center"><span>4. <strong>Devotee Group</strong> — <em>Oil & wicks</em> <span class="muted">(Deepam)</span></span></li>
+          </ul>
         </div>
       </div>
     </div>
@@ -177,7 +272,7 @@
   </div>
 </section>
 
-<!-- CONTACT (MAP: THATIPARTHI 524309) -->
+<!-- CONTACT -->
 <section id="contact" class="py-5">
   <div class="container">
     <h2 class="section-title mb-3">Contact & Location</h2>
@@ -186,9 +281,7 @@
         <div class="card p-4 h-100">
           <div class="d-flex align-items-center mb-2"><i class="bi bi-telephone me-2"></i> <span>+91 98765 43210</span></div>
           <div class="d-flex align-items-center mb-2"><i class="bi bi-envelope me-2"></i> <span>shivatemple@example.com</span></div>
-          <div class="d-flex align-items-start"><i class="bi bi-geo-alt me-2"></i> 
-            <span>Sri Shiva Temple, Thatiparthi, Nellore District, Andhra Pradesh – <strong>524309</strong></span>
-          </div>
+          <div class="d-flex align-items-start"><i class="bi bi-geo-alt me-2"></i> <span>Sri Shiva Temple, Thatiparthi, Nellore District, Andhra Pradesh – <strong>524309</strong></span></div>
         </div>
       </div>
       <div class="col-md-7">
@@ -200,7 +293,7 @@
   </div>
 </section>
 
-<!-- DONATIONS (LAST, DUMMY DATA) -->
+<!-- DONATIONS (hard-coded list + total) -->
 <section id="donations" class="py-5">
   <div class="container">
     <div class="d-flex flex-wrap gap-3 justify-content-between align-items-end mb-3">
@@ -209,22 +302,37 @@
         <div class="muted">Names shown unless donor opts for Anonymous.</div>
       </div>
       <div class="text-end">
-        <div class="h5 mb-0">Total This Month: <span id="donationTotal" style="color:var(--primary)">₹0</span></div>
-        <small class="muted">Auto-calculated</small>
+        <div class="h5 mb-0">Total This Month: <span style="color:var(--primary)">₹11,004</span></div>
+        <small class="muted">Example total for Aug 2025</small>
       </div>
     </div>
+
     <div class="table-responsive">
       <table class="table align-middle">
         <thead><tr><th>#</th><th>Name</th><th>Amount</th><th>Date</th><th>Purpose</th></tr></thead>
-        <tbody id="donationTable"></tbody>
+        <tbody>
+          <tr><td>1</td><td>Ravi Kumar</td><td>₹1,500</td><td>01-08-2025</td><td>Annadanam</td></tr>
+          <tr><td>2</td><td>Anonymous</td><td>₹501</td><td>02-08-2025</td><td>Deepam</td></tr>
+          <tr><td>3</td><td>Sita Devi</td><td>₹1,000</td><td>03-08-2025</td><td>Renovation</td></tr>
+          <tr><td>4</td><td>Temple Well-wisher</td><td>₹251</td><td>10-08-2025</td><td>Prasadam</td></tr>
+          <tr><td>5</td><td>Karthik</td><td>₹2,000</td><td>11-08-2025</td><td>Alankaram</td></tr>
+          <tr><td>6</td><td>Meena & Family</td><td>₹3,000</td><td>12-08-2025</td><td>Annadanam</td></tr>
+          <tr><td>7</td><td>Anonymous Devotee</td><td>₹801</td><td>12-08-2025</td><td>Deepam</td></tr>
+          <tr><td>8</td><td>Local Shop</td><td>₹1,200</td><td>14-08-2025</td><td>Temple Cleaning</td></tr>
+          <tr><td>9</td><td>Raghavendra</td><td>₹751</td><td>15-08-2025</td><td>Vastram</td></tr>
+          <tr class="table-secondary"><td>—</td><td>Nithya (Previous Month)</td><td>₹451</td><td>29-07-2025</td><td>Prasadam</td></tr>
+        </tbody>
       </table>
     </div>
+
     <div class="row g-4 mt-1">
       <div class="col-md-6">
         <div class="card p-4 h-100">
           <h5 class="mb-2"><i class="bi bi-qr-code me-2"></i>Donate via UPI</h5>
           <div class="d-flex align-items-center gap-3">
-            <div class="p-2 bg-white rounded"><img src="https://api.qrserver.com/v1/create-qr-code/?size=140x140&data=upi%3A%2F%2Fpay%3Fpa%3ATEMPLE-UPI-ID%26pn%3AShiva%20Temple%26am%3D0%26cu%3DINR" width="140" height="140" alt="UPI QR"></div>
+            <div class="p-2 bg-white rounded">
+              <img src="https://api.qrserver.com/v1/create-qr-code/?size=140x140&data=upi%3A%2F%2Fpay%3Fpa%3ATEMPLE-UPI-ID%26pn%3AShiva%20Temple%26am%3D0%26cu%3DINR" width="140" height="140" alt="UPI QR">
+            </div>
             <div>
               <div><strong>UPI ID:</strong> <span style="color:var(--primary)">TEMPLE-UPI-ID@bank</span></div>
               <div><strong>Account:</strong> 1234567890, SBI Thatiparthi (524309)</div>
@@ -235,156 +343,4 @@
       </div>
       <div class="col-md-6">
         <div class="card p-4 h-100">
-          <h5 class="mb-2"><i class="bi bi-ui-checks-grid me-2"></i>How Transparency Works</h5>
-          <ul class="mb-0 muted">
-            <li>Donations recorded with name/amount/date.</li>
-            <li>Anonymous option available.</li>
-            <li>Monthly totals shown here.</li>
-            <li>Admin updates daily from temple records.</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<footer class="py-4">
-  <div class="container d-flex flex-wrap justify-content-between align-items-center gap-2">
-    <div>© <span id="year"></span> Sri Shiva Temple, Thatiparthi. All rights reserved.</div>
-    <div class="d-flex gap-3">
-      <a href="#about" class="text-decoration-none" style="color:#fff">About</a>
-      <a href="#donations" class="text-decoration-none" style="color:#fff">Donate</a>
-      <a href="#contact" class="text-decoration-none" style="color:#fff">Contact</a>
-    </div>
-  </div>
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-  // ====== DUMMY/SAMPLE DATA ======
-  const events = [
-    { title: 'Pradosham Special Abhishekam', date: '2025-08-17', description: 'Evening aarti, bhajans, prasadam.' },
-    { title: 'Shravan Somvar Bhajan', date: '2025-08-18', description: 'Devotional songs and collective archana.' },
-    { title: 'Rudrabhishekam', date: '2025-08-25', description: 'Rudra chanting and special puja.' },
-    { title: 'Monthly Annadanam', date: '2025-08-28', description: 'Community lunch service.' },
-    { title: 'Ganesh Chaturthi Seva Drive', date: '2025-09-02', description: 'Volunteer sign-up and prep.' }
-  ];
-
-  const donations = [
-    { donorName:'Ravi Kumar', amount:1500, date:'2025-08-01', purpose:'Annadanam', isAnonymous:false },
-    { donorName:'Anonymous', amount:501, date:'2025-08-02', purpose:'Deepam', isAnonymous:true },
-    { donorName:'Sita Devi', amount:1000, date:'2025-08-03', purpose:'Renovation', isAnonymous:false },
-    { donorName:'Temple Well-wisher', amount:251, date:'2025-08-10', purpose:'Prasadam', isAnonymous:true },
-    { donorName:'Karthik', amount:2000, date:'2025-08-11', purpose:'Alankaram', isAnonymous:false },
-    { donorName:'Meena & Family', amount:3000, date:'2025-08-12', purpose:'Annadanam', isAnonymous:false },
-    { donorName:'Anonymous Devotee', amount:801, date:'2025-08-12', purpose:'Deepam', isAnonymous:true },
-    { donorName:'Local Shop', amount:1200, date:'2025-08-14', purpose:'Temple Cleaning', isAnonymous:false },
-    { donorName:'Raghavendra', amount:751, date:'2025-08-15', purpose:'Vastram', isAnonymous:false },
-    { donorName:'Nithya', amount:451, date:'2025-07-29', purpose:'Prasadam', isAnonymous:false }
-  ];
-
-  const committee = [
-    { name:'Founding Member', role:'Founder & Trustee', phone:'+91 91234 56789', photo:'https://raw.githubusercontent.com/MahidharMannuru5/Shivatemplethatiparthi/main/Images/IMG-20250213-WA0017.jpg' },
-    { name:'Mahesh Babu', role:'Chairperson', phone:'+91 98123 12345', photo:'https://images.unsplash.com/photo-1544723795-3fb6469f5b39?q=80&w=400&auto=format&fit=crop' },
-    { name:'Lakshmi Narayan', role:'Treasurer', phone:'+91 99123 23456', photo:'https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=400&auto=format&fit=crop' },
-    { name:'K. Sangeetha', role:'Events Coordinator', phone:'+91 97123 34567', photo:'https://images.unsplash.com/photo-1541534401786-2077eed87a72?q=80&w=400&auto=format&fit=crop' },
-    { name:'R. Ganesan', role:'Temple Manager', phone:'+91 96123 45678', photo:'https://images.unsplash.com/photo-1552374196-c4e7ffc6e126?q=80&w=400&auto=format&fit=crop' },
-    { name:'Priya Dharshini', role:'Communications', phone:'+91 95123 56789', photo:'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=400&auto=format&fit=crop' }
-  ];
-
-  const sponsorsToday = {
-    cash: [
-      { name:'Karthik Family', amount: 2000, note:'Alankaram' },
-      { name:'Vijaya Lakshmi', amount: 501, note:'Deepam' },
-      { name:'Suresh & Co.', amount: 1501, note:'Prasadam' }
-    ],
-    kind: [
-      { name:'Raghav', item:'1 bag rice (25kg)', note:'Annadanam' },
-      { name:'Shreya', item:'Flowers & garlands', note:'Evening Aarti' },
-      { name:'Local Dairy', item:'Milk for abhishekam', note:'Morning Pooja' },
-      { name:'Devotee Group', item:'Oil & wicks', note:'Deepam' }
-    ]
-  };
-
-  // ====== RENDERERS ======
-  const fmtINR = amt => '₹' + Number(amt).toLocaleString('en-IN');
-
-  function renderEvents(){
-    const ul = document.getElementById('eventList');
-    ul.innerHTML = '';
-    events.sort((a,b)=> new Date(a.date) - new Date(b.date)).forEach(ev=>{
-      const li = document.createElement('li');
-      li.className = 'list-group-item d-flex justify-content-between align-items-start';
-      li.innerHTML = `
-        <div class="me-auto">
-          <div class="fw-semibold">${ev.title}</div>
-          <div class="muted small">${ev.description||''}</div>
-        </div>
-        <span class="badge rounded-pill" style="background:var(--chip); color:#7b3e00; border:1px solid #ffd9a8">
-          ${new Date(ev.date).toDateString()}
-        </span>`;
-      ul.appendChild(li);
-    });
-  }
-
-  function renderCommittee(){
-    const grid = document.getElementById('committeeGrid');
-    grid.innerHTML = '';
-    committee.forEach(m=>{
-      const col = document.createElement('div');
-      col.className = 'col-12 col-sm-6 col-lg-4';
-      col.innerHTML = `
-        <div class="card committee-card p-3 text-center">
-          <img src="${m.photo}" alt="${m.name}" class="rounded-circle mb-3 committee-photo">
-          <div class="fw-semibold">${m.name}</div>
-          <div class="muted small mb-1">${m.role}</div>
-          <div class="small"><i class="bi bi-telephone me-1"></i>${m.phone}</div>
-        </div>`;
-      grid.appendChild(col);
-    });
-  }
-
-  function renderSponsors(){
-    const cashUl = document.getElementById('cashSponsors');
-    const kindUl = document.getElementById('kindSponsors');
-    cashUl.innerHTML = '';
-    kindUl.innerHTML = '';
-    sponsorsToday.cash.forEach((s,i)=>{
-      const li = document.createElement('li');
-      li.className = 'list-group-item d-flex justify-content-between align-items-center';
-      li.innerHTML = `<span>${i+1}. <strong>${s.name}</strong> — <span class="text-success">${fmtINR(s.amount)}</span> <span class="muted">(${s.note||''})</span></span>`;
-      cashUl.appendChild(li);
-    });
-    sponsorsToday.kind.forEach((s,i)=>{
-      const li = document.createElement('li');
-      li.className = 'list-group-item d-flex justify-content-between align-items-center';
-      li.innerHTML = `<span>${i+1}. <strong>${s.name}</strong> — <em>${s.item}</em> <span class="muted">(${s.note||''})</span></span>`;
-      kindUl.appendChild(li);
-    });
-  }
-
-  function renderDonations(){
-    const tbody = document.getElementById('donationTable');
-    tbody.innerHTML = '';
-    const now = new Date(); let total = 0; let i=1;
-    donations.sort((a,b)=> new Date(b.date)-new Date(a.date)).forEach(d=>{
-      const tr = document.createElement('tr');
-      const dt = new Date(d.date);
-      if(dt.getMonth()===now.getMonth() && dt.getFullYear()===now.getFullYear()) total += d.amount;
-      tr.innerHTML = `
-        <td>${i++}</td>
-        <td>${d.isAnonymous ? 'Anonymous' : d.donorName}</td>
-        <td>${fmtINR(d.amount)}</td>
-        <td>${dt.toLocaleDateString('en-IN')}</td>
-        <td>${d.purpose||'-'}</td>`;
-      tbody.appendChild(tr);
-    });
-    document.getElementById('donationTotal').textContent = fmtINR(total);
-  }
-
-  // init
-  document.getElementById('year')?.textContent = new Date().getFullYear();
-  renderEvents(); renderCommittee(); renderSponsors(); renderDonations();
-</script>
-</body>
-</html>
+         
