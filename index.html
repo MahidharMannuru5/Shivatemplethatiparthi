@@ -12,7 +12,7 @@
       --primary:#a12b2b; --accent:#ff9933; --bg:#fdf6ec; --text:#2b1d1d; --muted:#6b4f4f;
       --border:#ead8c6; --chip:#fff1da; --card:#ffffff;
     }
-    html,body{background:var(--bg); color:var(--text); font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans");}
+    html,body{background:var(--bg); color:var(--text); font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans";}
     .navbar{background:var(--primary)!important; box-shadow:0 4px 16px rgba(161,43,43,.15)}
     .navbar .nav-link,.navbar-brand{color:#fff!important; font-weight:600}
     .navbar .nav-link:hover,.navbar .nav-link.active{color:var(--accent)!important}
@@ -34,6 +34,7 @@
     #committeeGrid{justify-content:center}
     .committee-card{height:100%; max-width:340px; margin-inline:auto}
     .committee-photo{width:86px;height:86px;object-fit:cover;border:3px solid #ffe0b7}
+
     .sponsor-chip{display:inline-flex; align-items:center; gap:.4rem; padding:.35rem .6rem; border-radius:999px; border:1px dashed #f1c08a; background:#fff7ea; color:#7b3e00; font-weight:600}
   </style>
 </head>
@@ -57,7 +58,7 @@
     </div>
   </nav>
 
-  <!-- PHOTOS FIRST -->
+  <!-- PHOTOS FIRST (construction images removed) -->
   <section id="top" class="pt-3 pb-4">
     <div class="container">
       <div id="photosCarousel" class="carousel slide rounded-4 overflow-hidden shadow" data-bs-ride="carousel">
@@ -73,24 +74,6 @@
               <img loading="lazy" src="https://raw.githubusercontent.com/MahidharMannuru5/Shivatemplethatiparthi/main/Images/IMG-20250213-WA0017.jpg" alt="Lingam Darshan">
             </div>
             <div class="carousel-caption d-none d-md-block"><h5>Lingam Darshan</h5></div>
-          </div>
-          <div class="carousel-item">
-            <div class="media-frame">
-              <img loading="lazy" src="https://raw.githubusercontent.com/MahidharMannuru5/Shivatemplethatiparthi/main/Images/IMG-20250223-WA0009.jpg" alt="Renovation Work 1">
-            </div>
-            <div class="carousel-caption d-none d-md-block"><h5>Renovation Work</h5></div>
-          </div>
-          <div class="carousel-item">
-            <div class="media-frame">
-              <img loading="lazy" src="https://raw.githubusercontent.com/MahidharMannuru5/Shivatemplethatiparthi/main/Images/IMG-20250227-WA0001.jpg" alt="Renovation Work 2">
-            </div>
-            <div class="carousel-caption d-none d-md-block"><h5>Gopuram Build</h5></div>
-          </div>
-          <div class="carousel-item">
-            <div class="media-frame">
-              <img loading="lazy" src="https://raw.githubusercontent.com/MahidharMannuru5/Shivatemplethatiparthi/main/Images/IMG-20250707-WA0003.jpg" alt="Renovation Work 3">
-            </div>
-            <div class="carousel-caption d-none d-md-block"><h5>Mandapam Structure</h5></div>
           </div>
           <div class="carousel-item">
             <div class="media-frame">
@@ -123,7 +106,7 @@
     </div>
   </section>
 
-  <!-- ABOUT (no right-side “Om Namah Shivaya” card) -->
+  <!-- ABOUT -->
   <section id="about" class="pb-5">
     <div class="container">
       <div class="card p-4">
@@ -148,7 +131,7 @@
     </div>
   </section>
 
-  <!-- EVENTS -->
+  <!-- EVENTS (dummy data) -->
   <section id="events" class="py-5">
     <div class="container">
       <div class="d-flex justify-content-between align-items-center mb-3">
@@ -159,15 +142,15 @@
     </div>
   </section>
 
-  <!-- COMMITTEE (centered, equal widths) -->
+  <!-- COMMITTEE (centered, full dummy list) -->
   <section id="committee" class="py-5">
     <div class="container">
       <h2 class="section-title mb-3">Temple Committee</h2>
-      <div id="committeeGrid" class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4"></div>
+      <div id="committeeGrid" class="row g-4 justify-content-center"></div>
     </div>
   </section>
 
-  <!-- TODAY'S SPONSORS -->
+  <!-- TODAY'S SPONSORS (dummy data) -->
   <section id="sponsors" class="py-5">
     <div class="container">
       <div class="d-flex justify-content-between align-items-center mb-3">
@@ -194,7 +177,7 @@
     </div>
   </section>
 
-  <!-- CONTACT (map updated for Thatiparthi) -->
+  <!-- CONTACT (map: Thatiparthi) -->
   <section id="contact" class="py-5">
     <div class="container">
       <h2 class="section-title mb-3">Contact & Location</h2>
@@ -208,16 +191,14 @@
         </div>
         <div class="col-md-7">
           <div class="ratio ratio-16x9 rounded overflow-hidden" style="box-shadow:0 10px 30px rgba(0,0,0,.12)">
-            <iframe
-              src="https://www.google.com/maps?q=Thatiparthi%2C%20Andhra%20Pradesh&z=14&output=embed"
-              referrerpolicy="no-referrer-when-downgrade" style="border:0" allowfullscreen loading="lazy"></iframe>
+            <iframe src="https://www.google.com/maps?q=Thatiparthi%2C%20Andhra%20Pradesh&z=14&output=embed" referrerpolicy="no-referrer-when-downgrade" style="border:0" allowfullscreen loading="lazy"></iframe>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- DONATIONS (LAST) -->
+  <!-- DONATIONS (LAST, dummy data) -->
   <section id="donations" class="py-5">
     <div class="container">
       <div class="d-flex flex-wrap gap-3 justify-content-between align-items-end mb-3">
@@ -278,32 +259,48 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script>
-    // ---- demo data (edit later or wire to Firebase) ----
+    // ---- DEMO DATA (edit later) ----
     const events = [
       { title: 'Pradosham Special Abhishekam', date: '2025-08-17', description: 'Evening aarti, bhajans, prasadam.' },
       { title: 'Shravan Somvar Bhajan', date: '2025-08-18', description: 'Devotional songs and collective archana.' },
-      { title: 'Rudrabhishekam', date: '2025-08-25', description: 'Rudra chanting and special puja.' }
+      { title: 'Rudrabhishekam', date: '2025-08-25', description: 'Rudra chanting and special puja.' },
+      { title: 'Monthly Annadanam', date: '2025-08-28', description: 'Community lunch service.' },
+      { title: 'Ganesh Chaturthi Seva Drive', date: '2025-09-02', description: 'Volunteer sign-up and prep.' }
     ];
+
     const donations = [
       { donorName:'Ravi Kumar', amount:1500, date:'2025-08-01', purpose:'Annadanam', isAnonymous:false },
       { donorName:'Anonymous', amount:501, date:'2025-08-02', purpose:'Deepam', isAnonymous:true },
-      { donorName:'Sita Devi', amount:1000, date:'2025-08-03', purpose:'Renovation', isAnonymous:false }
+      { donorName:'Sita Devi', amount:1000, date:'2025-08-03', purpose:'Renovation', isAnonymous:false },
+      { donorName:'Temple Well-wisher', amount:251, date:'2025-08-10', purpose:'Prasadam', isAnonymous:true },
+      { donorName:'Karthik', amount:2000, date:'2025-08-11', purpose:'Alankaram', isAnonymous:false },
+      { donorName:'Meena & Family', amount:3000, date:'2025-08-12', purpose:'Annadanam', isAnonymous:false },
+      { donorName:'Anonymous Devotee', amount:801, date:'2025-08-12', purpose:'Deepam', isAnonymous:true },
+      { donorName:'Local Shop', amount:1200, date:'2025-08-14', purpose:'Temple Cleaning', isAnonymous:false },
+      { donorName:'Raghavendra', amount:751, date:'2025-08-15', purpose:'Vastram', isAnonymous:false },
+      { donorName:'Nithya', amount:451, date:'2025-07-29', purpose:'Prasadam', isAnonymous:false }
     ];
+
     const committee = [
       { name:'Founding Member', role:'Founder & Trustee', phone:'+91 9XXXX XXXXX', photo:'https://raw.githubusercontent.com/MahidharMannuru5/Shivatemplethatiparthi/main/Images/IMG-20250213-WA0017.jpg' },
       { name:'Mahesh Babu', role:'Chairperson', phone:'+91 98XXX 12345', photo:'https://images.unsplash.com/photo-1544723795-3fb6469f5b39?q=80&w=400&auto=format&fit=crop' },
       { name:'Lakshmi Narayan', role:'Treasurer', phone:'+91 99XXX 23456', photo:'https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=400&auto=format&fit=crop' },
-      { name:'K. Sangeetha', role:'Events Coordinator', phone:'+91 97XXX 34567', photo:'https://images.unsplash.com/photo-1541534401786-2077eed87a72?q=80&w=400&auto=format&fit=crop' }
+      { name:'K. Sangeetha', role:'Events Coordinator', phone:'+91 97XXX 34567', photo:'https://images.unsplash.com/photo-1541534401786-2077eed87a72?q=80&w=400&auto=format&fit=crop' },
+      { name:'R. Ganesan', role:'Temple Manager', phone:'+91 96XXX 45678', photo:'https://images.unsplash.com/photo-1552374196-c4e7ffc6e126?q=80&w=400&auto=format&fit=crop' },
+      { name:'Priya Dharshini', role:'Communications', phone:'+91 95XXX 56789', photo:'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=400&auto=format&fit=crop' }
     ];
+
     const sponsorsToday = {
       cash: [
         { name:'Karthik Family', amount: 2000, note:'Alankaram' },
-        { name:'Vijaya Lakshmi', amount: 501, note:'Deepam' }
+        { name:'Vijaya Lakshmi', amount: 501, note:'Deepam' },
+        { name:'Suresh & Co.', amount: 1501, note:'Prasadam' }
       ],
       kind: [
         { name:'Raghav', item:'1 bag rice (25kg)', note:'Annadanam' },
         { name:'Shreya', item:'Flowers & garlands', note:'Evening Aarti' },
-        { name:'Local Dairy', item:'Milk for abhishekam', note:'Morning Pooja' }
+        { name:'Local Dairy', item:'Milk for abhishekam', note:'Morning Pooja' },
+        { name:'Devotee Group', item:'Oil & wicks', note:'Deepam' }
       ]
     };
 
@@ -333,7 +330,7 @@
       grid.innerHTML = '';
       committee.forEach(m=>{
         const col = document.createElement('div');
-        col.className = 'col';
+        col.className = 'col-12 col-sm-6 col-lg-4';
         col.innerHTML = `
           <div class="card committee-card p-3 text-center">
             <img src="${m.photo}" alt="${m.name}" class="rounded-circle mb-3 committee-photo">
